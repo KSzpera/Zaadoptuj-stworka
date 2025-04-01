@@ -1,0 +1,17 @@
+/* 1. Resetujemy domyślne style przeglądarki */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 2. Ustawiamy ogólne style dla całego dokumentu */
+body {
+    font-family: system-ui, sans-serif; /* Czcionka systemowa */
+    line-height: 1.6;                   /* Odstęp między liniami */
+    padding: 2rem;                      /* Margines wewnętrzny strony */
+    background-color: #fdfaf6;          /* Jasne tło strony */
+    color: #333;                        /* Ciemny kolor tekstu */
+  }
+
+  

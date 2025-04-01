@@ -5,7 +5,7 @@
     padding: 0;
   }
 
-  /* 2. Ustawiamy ogólne style dla całego dokumentu */
+/* 2. Ustawiamy ogólne style dla całego dokumentu */
 body {
     font-family: system-ui, sans-serif; /* Czcionka systemowa */
     line-height: 1.6;                   /* Odstęp między liniami */
@@ -14,4 +14,61 @@ body {
     color: #333;                        /* Ciemny kolor tekstu */
   }
 
+/* 3. Dodajmy styl dla header */
+header {
+    text-align: center; /* Wyśrodkuj tekst */
+    margin-bottom: 3rem; /* Dodaj przestrzeń pod nagłówkiem */
+  }
+
+/* 4. Stylujemy .card (kartę stworka) */
+.card {
+    max-width: 600px;             /* Maksymalna szerokość karty */
+    margin: 0 auto;               /* Wyśrodkowanie */
+    background-color: #fff;       /* Białe tło karty */
+    padding: 2rem;                /* Wewnętrzny margines */
+    border-radius: 1rem;          /* Zaokrąglone rogi */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1); /* Miękki cień */
+  }
+
+/* 4. Stylujemy .card (kartę stworka) */
+.card img {
+    width: 100%;           /* Obrazek dopasowany do szerokości karty */
+    border-radius: 0.5rem; /* Delikatnie zaokrąglone rogi */
+    margin: 1rem 0;        /* Odstęp góra/dół */
+  }
+
+/* 5. Środkujemy h2 */
+.card h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+/* 6. Styl przycisku wewnątrz karty */
+.card button {
+    padding: 0.75rem 1.5rem;
+    background-color: #ffb347; /* jasny pomarańcz */
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
   
+/* 7. Efekt po najechaniu */
+.card button:hover {
+    background-color: #ffa500; /* ciemniejszy odcień */
+  }
+  
+/* 8. Efekt po kliknięciu */
+.card button:active {
+    transform: scale(0.98); /* lekko się "wciska" */
+    opacity: 0.9;
+  }
+
+/* 9. Wyrównanie przycisku do prawej */
+.button-wrapper {
+    display: flex;
+    justify-content: flex-end; /* przycisk po prawej stronie */
+    margin-top: 1rem;
+  }

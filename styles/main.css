@@ -43,6 +43,28 @@
     padding: 0;
   }
 
+  /* Ikona informująca o dark/light mode */
+  .theme-icon {
+    position: absolute; /* "fixed" jeśli ma być sticky */
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.3;
+  }
+
+   /* zmień ikonę w zależności od trybu */
+  @media (prefers-color-scheme: dark) {
+    .theme-icon::before {
+      content: "🌙";
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    .theme-icon::before {
+      content: "☀️";
+    }
+  }
+
 /* Animacja wejścia */
 @keyframes fadeIn {
   from {

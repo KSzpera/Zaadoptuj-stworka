@@ -23,6 +23,16 @@
     padding: 0;
   }
 
+/* Animacja wejścia */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Ustawiamy ogólne style dla całego dokumentu */
 body {
     font-family: var(--font-family);
@@ -68,17 +78,6 @@ header {
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
     transform: translateY(-4px);
   }
-
-/* Animacja wejścia */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 
 /* Stylujemy .card img (obrazki) */
 .card img {

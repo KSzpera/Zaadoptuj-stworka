@@ -48,6 +48,15 @@ header {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   }
 
+  .card {
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+  }
+
 /* Stylujemy .card (kartę stworka) */
 .card img {
     width: 100%;           /* Obrazek dopasowany do szerokości karty */

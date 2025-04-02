@@ -36,7 +36,7 @@
   }
 }
 
-  /* Resetujemy domyślne style przeglądarki */
+  /* Reset domyślnych stylów przeglądarki */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -52,7 +52,7 @@
     opacity: 0.3;
   }
 
-   /* zmień ikonę w zależności od trybu */
+   /* Zmień theme icon w zależności od trybu */
   @media (prefers-color-scheme: dark) {
     .theme-icon::before {
       content: "🌙";
@@ -75,7 +75,7 @@
   }
 }
 
-/* Ustawiamy ogólne style dla całego dokumentu */
+/* Ogólne style dla całego dokumentu */
 body {
     font-family: var(--font-family);
     line-height: 1.6;
@@ -84,10 +84,22 @@ body {
     color: var(--color-text);
   }
 
-/* Dodajmy styl dla header */
+/* Styl dla header */
 header {
     text-align: center; /* Wyśrodkuj tekst */
     margin-bottom: 3rem; /* Dodaj przestrzeń pod nagłówkiem */
+  }
+
+  /* Theme icon */
+  .theme-icon {
+    font-size: 1.5rem;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+  }
+
+  .theme-icon:hover {
+    opacity: 1;
+    cursor: default;
   }
 
 /* Styl gridu */
@@ -99,7 +111,7 @@ header {
   margin: 0 auto;
 }
 
-/* Stylujemy .card (kartę stworka) */
+/* Karta stworka */
 .card {
     max-width: 600px;
     margin: 0 auto;
@@ -162,7 +174,7 @@ header {
     animation-delay: 1.1s;
   }
 
-/* Stylujemy .card img (obrazki) */
+/* Obrazki w karcie */
 .card img {
     width: 100%;           /* Obrazek dopasowany do szerokości karty */
     border-radius: 0.5rem; /* Delikatnie zaokrąglone rogi */

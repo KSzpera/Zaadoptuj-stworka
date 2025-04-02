@@ -80,7 +80,7 @@ header {
     margin-top: 1rem;
   }
 
-  /* Przyciski bazowe */
+/* Przyciski bazowe */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -91,17 +91,26 @@ header {
     transition: background-color 0.2s ease, transform 0.1s ease;
   }
   
-  /* Styl przycisku głównego */
-  .btn-primary {
+/* Styl przycisku głównego */
+.btn-primary {
     background-color: var(--color-primary);
     color: white;
   }
   
-  .btn-primary:hover {
+.btn-primary:hover {
     background-color: var(--color-primary-hover);
   }
   
-  .btn-primary:active {
+.btn-primary:active {
     transform: scale(0.98);
     opacity: 0.9;
+  }
+
+  /* Styl gridu */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }

@@ -152,18 +152,6 @@ header {
     text-align: center;
     margin-bottom: 1rem;
   }
-
-/* Styl przycisku wewnątrz karty */
-.card button {
-    padding: 0.75rem 1.5rem;
-    background-color: var(--color-button);
-    color: var(--color-button-text);
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-  }
   
 /* Wyrównanie przycisku do prawej */
 .button-wrapper {
@@ -174,29 +162,29 @@ header {
 
 /* Przyciski bazowe */
 .btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    font-weight: bold;
-    border: none;
-    border-radius: var(--radius);
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-  }
-  
-/* Styl przycisku głównego */
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Główna wersja */
 .btn-primary {
-    background-color: var(--color-primary);
-    color: var(--color-button);
-  }
-  
+  background-color: var(--color-primary);
+  color: var(--color-button-text);
+}
+
 .btn-primary:hover {
-    background-color: var(--color-button-hover);
-  }
-  
+  background-color: var(--color-button-hover);
+}
+
 .btn-primary:active {
-    transform: scale(0.98);
-    opacity: 0.9;
-  }
+  transform: scale(0.98);
+  opacity: 0.9;
+}
 
 /* styles to apply if a user's device settings are set to reduced motion */
 @media (prefers-reduced-motion: reduce) {

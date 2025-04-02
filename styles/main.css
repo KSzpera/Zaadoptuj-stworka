@@ -102,6 +102,11 @@ header {
     cursor: default;
   }
 
+/* Styl dla main */
+  main.container {
+    padding-bottom: 4rem;
+  }
+
 /* Styl gridu */
 .grid-container {
   display: grid;
@@ -220,7 +225,28 @@ header {
   opacity: 0.9;
 }
 
-/* styles to apply if a user's device settings are set to reduced motion */
+/*Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem var(--spacing);
+  font-size: 0.875rem;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  opacity: 0.7;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 4rem;
+}
+
+.site-footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Styles to apply if a user's device settings are set to reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .card {
     animation: none !important;

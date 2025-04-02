@@ -170,3 +170,18 @@ header {
     transform: scale(0.98);
     opacity: 0.9;
   }
+
+/* styles to apply if a user's device settings are set to reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+.card:hover {
+  transform: none !important;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1) !important; /* ← cień bazowy */
+}
+}

@@ -55,9 +55,10 @@ header {
     padding: var(--spacing);
     border-radius: 1rem;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-  }
-
-.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     transition: box-shadow 0.3s ease, transform 0.2s ease;
   }
   
@@ -98,6 +99,7 @@ header {
     margin-top: 1rem;
   }
 
+  
 /* Przyciski bazowe */
 .btn {
     display: inline-block;

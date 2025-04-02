@@ -38,6 +38,15 @@ header {
     margin-bottom: 3rem; /* Dodaj przestrzeń pod nagłówkiem */
   }
 
+/* Styl gridu */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* Stylujemy .card (kartę stworka) */
 .card {
     max-width: 600px;
@@ -48,16 +57,16 @@ header {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   }
 
-  .card {
+.card {
     transition: box-shadow 0.3s ease, transform 0.2s ease;
   }
   
-  .card:hover {
+.card:hover {
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
     transform: translateY(-4px);
   }
 
-/* Stylujemy .card (kartę stworka) */
+/* Stylujemy .card img (obrazki) */
 .card img {
     width: 100%;           /* Obrazek dopasowany do szerokości karty */
     border-radius: 0.5rem; /* Delikatnie zaokrąglone rogi */
@@ -113,13 +122,4 @@ header {
 .btn-primary:active {
     transform: scale(0.98);
     opacity: 0.9;
-  }
-
-  /* Styl gridu */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
   }
